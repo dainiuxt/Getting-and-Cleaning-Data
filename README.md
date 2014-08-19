@@ -17,6 +17,6 @@ At the end `final()` function will be executed. This function will create "compl
 2. Download `runing_analysis.R` to this directory.
 3. Open downloaded file in RStudio or other code editor.
 4. Change from `method=curl` to `method=auto` in 5th row in `runing_analysis.R` file and the source rows 4 and 5 from this file. This will download all needed data and saves it as `data.zip` file in your working directory.
-5. Comment out lines 1-10 of `runing_analysis.R`.
+5. Comment out lines 1-10 and line 46 of `runing_analysis.R`.
 6. Unzip downloaded file manually. All extracted files and folders should be directly in your working directory not in the `UCI HAR Dataset` subdir.
 7. Source `runing_analysis.R` file.

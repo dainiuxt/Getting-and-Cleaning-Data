@@ -31,7 +31,7 @@ groupdf <- function (groupname) {
      final_df$groupname <- groupname
      final_df
 }
-run <- function() {
+final <- function() {
      train_df <- groupdf('train')
      test_df <- groupdf('test')
      final_df <- rbind(train_df, test_df)
@@ -44,4 +44,4 @@ run <- function() {
      write.csv(file='./simple.csv', x=simple_df)
 }
 dataset()
-run()
+final()

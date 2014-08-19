@@ -41,7 +41,7 @@ final <- function() {
      final_names <- names(final_df)
      data_columns = final_names[3:68]
      simple_df <- ddply(final_df, group_columns, function(x) colMeans(x[data_columns]))
-     write.csv(file='./simple.csv', x=simple_df)
+     write.table(row.name = FALSE, file = './simple.txt', sep = ";", x=simple_df)
 }
 dataset()
 final()

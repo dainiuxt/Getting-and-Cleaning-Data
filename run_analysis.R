@@ -3,8 +3,6 @@ setwd(this.dir)
 dataset <- function () {
      fileurl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
      download.file(fileurl, destfile="./data.zip", method="curl")
-#Comment previous line and uncomment the following if you running from windows pc
-#download.file(fileurl, destfile="./data.zip", method="curl")
      system("unzip -d ./ ./data.zip")
      system("mv ./'UCI HAR Dataset'/* ./")
      system("rm -r ./'UCI HAR Dataset'")
